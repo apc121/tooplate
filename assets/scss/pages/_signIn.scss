@@ -1,0 +1,34 @@
+.signin{
+    max-width: 600px;
+    margin: auto;
+
+    h1{
+        @include styleText($fs-64,$fw-900,$color-black);
+    }
+    .form-login{
+        .form-floating{
+           @extend %form-floating;
+        }
+        .btn-signin{
+            text-transform: uppercase;
+            border: 1px solid $color-black;
+            @include styleButton($color-white,$color-black,$fs-18,$fw-300,100px,$pd-10,$pd-10 + 6);
+            transition: .5s;
+            &:hover{
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+        .link-signup{
+            @include styleText($fs-20,$fw-300,$color-717275);
+            a{
+                text-decoration: none;
+                color: $color-717275;
+                transition: .5s;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

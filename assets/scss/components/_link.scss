@@ -1,0 +1,21 @@
+.link {
+    text-decoration: none;
+    transition: .5s;
+    @include styleText($fs-12, $fw-700, $color-717275);
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    i {
+        padding-left: 10px;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &:hover i {
+
+        opacity: 1;
+    }
+}

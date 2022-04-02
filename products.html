@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FOTNS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- ANIMATED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+   
+    <!-- HEADER -->
+    <header class="fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg  py-0">
+            <div class="container ">
+                <div class="col-lg-2 col-8 order-1 order-lg-0 text-center">
+                    <a class="navbar-brand" href="#">
+                        little <span>fashion</span>
+                    </a>
+                </div>
+                <div class=" col-2 order-0 d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-lg-9 col-12 order-4 order-lg-1">
+                    <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./story.html">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FQAs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-2 order-3 order-lg-3">
+                    <div class="header__icon d-flex justify-content-evenly">
+                        <a class="header__iconLogin " href="signin.html">
+                            <i class="fa-solid fa-user fs-4  "></i>
+                        </a>
+                        <a href="product-detail.html" class="header__iconCart">
+                            <i class="fa-solid fa-bag-shopping fs-4 "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- BANNER PRODUCTS -->
+    <section class="bannerProducts banner">
+        <div class="container">
+            <h3 class="banner__title">
+                <span>Choose your</span>
+                favorite stuffs
+            </h3>
+        </div>
+    </section>
+    <!-- NEW ARRIVALS -->
+    <section class="newArrivals section">
+        <div class="container">
+            <h2 class="newArrivals__title">New Arrivals</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="card-img-top"
+                                alt="evan-mcdougall-qnh1odlqOmk-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="status">
+                                New Arrival</p>
+
+                            <p class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Tree pot</h5>
+                                <p class="prduct-price mb-0">$25</p>
+                            </div>
+                            <p class="card-desc">Original package design from house</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/jordan-nix-CkCUvwMXAac-unsplash.jpeg" class="card-img-top"
+                                alt="jordan-nix-CkCUvwMXAac-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="status">
+                                Discounted Price</p>
+
+                            <p class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Fashion Set</h5>
+                                <p class="prduct-price mb-0">$35</p>
+                            </div>
+                            <p class="card-desc">Costume Package</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/nature-zen-3Dn1BZZv3m8-unsplash.jpeg" class="card-img-top"
+                                alt="nature-zen-3Dn1BZZv3m8-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="">
+                            </p>
+
+                            <p class="like text-end">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Juice Drinks</h5>
+                                <p class="prduct-price mb-0">$45</p>
+                            </div>
+                            <p class="card-desc">Nature made another world</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- POPULAR -->
+    <section class="popular section pt-0">
+        <div class="container">
+            <h2 class="popular__title">
+                Popular
+            </h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/team-fredi-8HRKoay8VJE-unsplash.jpeg" class="card-img-top"
+                                alt="team-fredi-8HRKoay8VJE-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="status">
+                                Trending</p>
+
+                            <p class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Package</h5>
+                                <p class="prduct-price mb-0">$50</p>
+                            </div>
+                            <p class="card-desc">Original package design from house</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/quokkabottles-kFc1_G1GvKA-unsplash.jpeg" class="card-img-top"
+                                alt="quokkabottles-kFc1_G1GvKA-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="">
+                            </p>
+
+                            <p class="like">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Bottle</h5>
+                                <p class="prduct-price mb-0">$100</p>
+                            </div>
+                            <p class="card-desc">Package design</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <a href="#" class="link-img">
+                            <img src="./assets/img/anis-m-WnVrO-DvxcE-unsplash.jpeg" class="card-img-top"
+                                alt="anis-m-WnVrO-DvxcE-unsplash">
+                        </a>
+                        <div class="card-img-caption d-flex justify-content-between">
+
+                            <p class="">
+                            </p>
+
+                            <p class="like text-end">
+                                <i class="fa-solid fa-heart"></i>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h5 class="product-name mb-0">Medicine</h5>
+                                <p class="prduct-price mb-0">$200</p>
+                            </div>
+                            <p class="card-desc">Original design from house</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__item">
+                        <div class="logo footer__title">
+                            <a href="#"> little</a>
+                            fashion
+                        </div>
+                        <p class="copyright mt-5">Copyright © 2022 <span>Little Fashion</span> </p>
+                        <p class="designBy">Designed by Tooplate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="footer__item ">
+                        <div class="footer__menu">
+                            <h5 class="footer__title">Sitemap</h5>
+                            <ul>
+                                <li>
+                                    <a href="story.html">Story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 align-self-center">
+                    <div class="footer__item">
+                        <div class="footer__menu">
+                            <ul>
+                                <li>
+                                    <a href="products.html">
+                                        Products</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html">
+
+                                        FAQs</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__item">
+                        <h5 class="footer__title">Social</h5>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS BS5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

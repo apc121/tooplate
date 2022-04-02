@@ -1,0 +1,93 @@
+.bannerProductDetail{
+    .banner__title{
+        max-width: 700px;
+    }
+}
+.productDetail{
+    img{
+        transition: .5s;
+        &:hover{
+            box-shadow: 0 0  30px $color-d0d1d1;
+        }
+    }
+    .productDetail__right{
+        padding-left: 30px;
+        .box-right{
+            h2{
+                @include styleText($fs-42,$fw-900,$color-black);
+                padding-top: 30px;
+            }
+            p{
+                font-size: $fs-12 + 2;
+                font-weight: $fw-300;
+            }
+        }
+        .product-desc{
+            p{
+                @include styleText($fs-24,$fw-300,$color-717275);
+                margin-bottom: 48px;
+            }
+        }
+        select{
+            width: 50%;
+        }
+        .btn-card{
+            width: 50%;
+            background-color: $color-black;
+            border: 1px solid $color-black;
+            transition: .5s;
+            @include styleText($fs-12 + 2,$fw-300,$color-white);
+            &:hover{
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+        .product-bottom{
+            a{
+                @include styleText($fs-12 + 2,$fw-300,$color-717275);
+                text-decoration: none;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+        .modal{
+            .modal-dialog{
+                max-width: 800px;
+            }
+            .modal-body{
+                h3{
+                    @include styleText($fs-36,$fw-700,$color-black);
+                }
+                .price{
+                    @include styleText($fs-20,$fw-300,$color-6c757d);
+
+                }
+                p{
+                    @include styleText($fs-12 + 2,$fw-300,$color-717275);
+                }
+                strong{
+                    @include styleText($fs-12 + 2,$fw-700,$color-717275);
+                }
+                .btn-checkout{
+                    width: 50%;
+                    @include styleText($fs-12 + 2,$fw-300,$color-white);
+                    border: 1px solid $color-black;
+                    background-color:$color-black;
+                    transition: .5s;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: $color-primary;
+                        border-color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.productLike{
+    .productLike__title{
+        @include styleText($fs-36,$fw-700,$color-black);
+    }
+}

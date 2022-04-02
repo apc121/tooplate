@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FOTNS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- ANIMATED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body >
+    <!-- HEADER -->
+   
+    <header class="fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg  py-0">
+            <div class="container ">
+                <div class="col-lg-2 col-8 order-1 order-lg-0 text-center">
+                    <a class="navbar-brand" href="#">
+                        little <span>fashion</span>
+                    </a>
+                </div>
+                <div class=" col-2 order-0 d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-lg-9 col-12 order-4 order-lg-1">
+                    <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./story.html">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FQAs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-2 order-3 order-lg-3">
+                    <div class="header__icon d-flex justify-content-evenly">
+                        <a class="header__iconLogin " href="signin.html">
+                            <i class="fa-solid fa-user fs-4  "></i>
+                        </a>
+                        <a href="product-detail.html" class="header__iconCart">
+                            <i class="fa-solid fa-bag-shopping fs-4 "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- CAROUSEL -->
+    <section class="tooplateCarousel">
+        <div class="swiper homeCarousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/img/medium-shot-business-women-high-five.jpeg"
+                        alt="medium-shot-business-women-high-five">
+                    <div class="carousel-caption container ">
+                        <h1>cool fashion</h1>
+                        <p>Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
+                        <a href="#" class="button-link">learn more about</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/team-meeting-renewable-energy-project.jpeg"
+                        alt="team-meeting-renewable-energy-project">
+                    <div class="carousel-caption container">
+                        <h1>new design</h1>
+                        <p>Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
+                        <a href="#" class="button-link">Explore products</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/two-business-partners-working-together-office-computer.jpeg"
+                        alt="two-business-partners-working-together-office-computer">
+                    <div class="carousel-caption container">
+                        <h1>talk to us</h1>
+                        <p>Tooplate is one of the best HTML CSS template websites for everyone.</p>
+                        <a href="#" class="button-link">Work with us</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- LITTLE -->
+    <section class="little section animate__animated fadeInUp">
+        <div class="container">
+
+            <h2 class="title text-center">
+                Get started with <span>Little</span> Fashion
+            </h2>
+            <div class="little__content">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 text-start">
+                        <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="introduction-tab" data-bs-toggle="pill"
+                                data-bs-target="#introduction" type="button" role="tab" aria-controls="introduction"
+                                aria-selected="true">Introduction</button>
+                            <button class="nav-link" id="howWork-tab" data-bs-toggle="pill" data-bs-target="#howWork"
+                                type="button" role="tab" aria-controls="howWork" aria-selected="false">How we
+                                work?</button>
+                            <button class="nav-link" id="capabilites-tab" data-bs-toggle="pill"
+                                data-bs-target="#capabilites" type="button" role="tab" aria-controls="capabilites"
+                                aria-selected="false">Capabilites</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="introduction" role="tabpanel"
+                                aria-labelledby="introduction-tab">
+                                <div class="row">
+                                    <div class="col-lg-7 col-12 ">
+                                        <img src="./assets/img/pim-chu-z6NZ76_UTDI-unsplash.jpeg"
+                                            alt="pim-chu-z6NZ76_UTDI-unsplash">
+                                    </div>
+                                    <div class="col-lg-5 col-12 tab-itemRight">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4 class="">Good <span> Design</span> Ideas for <span>your</span> fashion
+                                            </h4>
+                                            <p>Little Fashion templates comes with sign in / <a href="signin.html"
+                                                    class="signin">sign up</a> pages, product listing
+                                                / product detail, about, FAQs, and contact page.</p>
+                                            <p>Since this HTML template is based on Boostrap 5 CSS library, you can feel
+                                                free to add more components as you need.</p>
+                                            <a href="#" class="mt-auto link">learn more about us
+                                                <i class="fa-solid fa-arrow-right  "></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="howWork" role="tabpanel" aria-labelledby="howWork-tab">
+                                <div class="row">
+                                    <div class="col-lg-7 ">
+                                        <iframe width="618" height="347" src="https://www.youtube.com/embed/f_7JqPDWhfw"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-lg-5 tab-itemRight">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4>Life at Studio</h4>
+                                            <p>Over three years in business, We’ve had the chance to work on a variety
+                                                of projects, with companies</p>
+                                            <p>Custom work is branding, web design, UI/UX design</p>
+                                            <a href="#" class="mt-auto link">work with us
+                                                <i class="fa-solid fa-arrow-right  "></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="capabilites" role="tabpanel"
+                                aria-labelledby="capabilites-tab">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <img src="./assets/img/cody-lannom-G95AReIh_Ko-unsplash.jpeg"
+                                            alt="cody-lannom-G95AReIh_Ko-unsplash">
+                                    </div>
+                                    <div class="col-lg-5 tab-itemRight">
+                                        <div class="d-flex flex-column h-100">
+                                            <h4>What can help you?</h4>
+                                            <p>Over three years in business, We’ve had the chance on projects</p>
+                                            <div class="statistika">
+                                                <div class="statistika__item ">
+                                                    <div class="branding d-flex justify-content-between">
+                                                        <p class="w-90">Branding</p>
+                                                        <p class="procento">90%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="statistika__item ">
+                                                    <div class="branding d-flex justify-content-between">
+                                                        <p class="w-70">Design & Stragety</p>
+                                                        <p class="procento">70%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="statistika__item ">
+                                                    <div class="branding d-flex justify-content-between">
+                                                        <p class="w-80">Online Platform</p>
+                                                        <p class="procento">80%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="mt-auto link">explore products
+                                                <i class="fa-solid fa-arrow-right  "></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RETAIL -->
+    <section class="retail container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 p-0">
+                <img src="./assets/img/retail-shop-owner-mask-social-distancing-shopping.jpg"
+                    alt="retail-shop-owner-mask-social-distancing-shopping" class="w-100">
+            </div>
+            <div class="col-lg-6 retail__right ">
+                <h2 class="retail__title mb-4 ">
+                    <span> Retail</span>
+                    shop owners
+                </h2>
+                <p class="mb-4">Credits go to Unsplash and FreePik websites for images used in this Little Fashion by
+                    Tooplate.</p>
+                <a href="#" class="mt-auto link">learn more about us
+                    <i class="fa-solid fa-arrow-right  "></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURED -->
+    <section class="featured section">
+        <div class="container">
+            <h2 class="title text-center">
+                Featured Products
+            </h2>
+            <div class="featured__products">
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <a href="#" class="link-img">
+                                <img src="./assets/img/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="card-img-top"
+                                    alt="evan-mcdougall-qnh1odlqOmk-unsplash">
+                            </a>
+                            <div class="card-img-caption d-flex justify-content-between">
+
+                                <p class="status">
+                                    New Arrival</p>
+
+                                <p class="like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between">
+                                    <h5 class="product-name mb-0">Tree pot</h5>
+                                    <p class="prduct-price mb-0">$25</p>
+                                </div>
+                                <p class="card-desc">Original package design from house</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <a href="#" class="link-img">
+                                <img src="./assets/img/jordan-nix-CkCUvwMXAac-unsplash.jpeg" class="card-img-top"
+                                    alt="jordan-nix-CkCUvwMXAac-unsplash">
+                            </a>
+                            <div class="card-img-caption d-flex justify-content-between">
+
+                                <p class="status">
+                                    Low Price</p>
+
+                                <p class="like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between">
+                                    <h5 class="product-name mb-0">Fashion Set</h5>
+                                    <p class="prduct-price mb-0">$35</p>
+                                </div>
+                                <p class="card-desc">Costume Package</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <a href="#" class="link-img">
+                                <img src="./assets/img/nature-zen-3Dn1BZZv3m8-unsplash.jpeg" class="card-img-top"
+                                    alt="nature-zen-3Dn1BZZv3m8-unsplash">
+                            </a>
+                            <div class="card-img-caption d-flex justify-content-between">
+
+                                <p class="">
+                                </p>
+
+                                <p class="like text-end">
+                                    <i class="fa-solid fa-heart"></i>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between">
+                                    <h5 class="product-name mb-0">Juice Drinks</h5>
+                                    <p class="prduct-price mb-0">$45</p>
+                                </div>
+                                <p class="card-desc">Nature made another world</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewAll text-center mt-3">
+                <a href="products.html" class="link pb-2">view all products</a>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__item">
+                        <div class="logo footer__title">
+                            <a href="#"> little</a>
+                            fashion
+                        </div>
+                        <p class="copyright mt-5">Copyright © 2022 <span>Little Fashion</span> </p>
+                        <p class="designBy">Designed by Tooplate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="footer__item ">
+                        <div class="footer__menu">
+                            <h5 class="footer__title">Sitemap</h5>
+                            <ul>
+                                <li>
+                                    <a href="story.html">Story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 align-self-center">
+                    <div class="footer__item">
+                        <div class="footer__menu">
+                            <ul>
+                                <li>
+                                    <a href="products.html">
+                                        Products</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html">
+
+                                        FAQs</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__item">
+                        <h5 class="footer__title">Social</h5>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS BS5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

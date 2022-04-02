@@ -1,0 +1,43 @@
+.accordion{
+    width: 70%;
+    .accordion-item{
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right:0 ;
+        .accordion-header{
+            border-bottom: 1px solid rgba($color: $color-black, $alpha: .1) ;
+            .accordion-button{
+                background-color: transparent;
+                padding: 24px 0;
+                @include styleText($fs-24,$fw-normal,$color-0c63e4);
+                &:focus{
+                    border: 0;
+                    box-shadow: none;
+                }
+                &.collapsed{
+                    @include styleText($fs-24,$fw-normal,$color-212529);
+                    border-bottom: 0;
+                }
+            }
+        }
+        .accordion-collapse{
+            border-bottom: 1px solid rgba($color: $color-black, $alpha: .1);
+            .accordion-body{
+                padding-left: 0;
+                p{
+                    @include styleText($fs-20,$fw-300,$color-717275);
+                    span{
+                        font-weight: $fw-700;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:992.98px) {
+        width: 100%;
+        .accordion-button{
+            @include font-size($fs-24);
+        }
+    }
+}

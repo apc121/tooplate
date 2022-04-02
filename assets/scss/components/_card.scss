@@ -1,0 +1,45 @@
+.card{
+    .link-img{
+        display: block;
+        img{
+            transition: .5s;
+            &:hover{
+                box-shadow: 0 0  30px $color-d0d1d1;
+            }
+        }
+    }
+    .card-img-caption{
+        position: absolute;
+        padding: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .status{
+            padding: 6px 10px;
+            background-color: $color-white;
+        }
+        .like{
+            cursor: pointer;
+            i{
+                transition: .5s;
+                color: $color-white;
+            }
+            &:hover i{
+                color: $color-primary;
+            }
+        }
+    }
+    .card-body{
+        .card-title{
+            .product-name{
+                @include styleText($fs-24,$fw-700,$color-black);
+            }
+            .prduct-price{
+                @include styleText($fs-12 + 2,$fw-normal,$color-6c757d);
+            }
+        }
+        .card-desc{
+            @include styleText($fs-12 + 2,$fw-300,$color-717275);
+        }
+    }
+}

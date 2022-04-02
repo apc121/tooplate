@@ -1,0 +1,33 @@
+.bannerProducts{
+    margin-top: 90px;
+    padding: 7rem 0;
+    background-color: $color-f0f8ff;
+    .bannerProducts__title{
+        max-width: 500px;
+        @include styleText($fs-64,$fw-900,$color-black);
+        span{
+            color: $color-primary;
+        }
+    }
+}
+.newArrivals{
+    .newArrivals__title{
+        margin-bottom: 48px;
+        @include styleText($fs-42,$fw-900,$color-black);
+    }
+}
+
+.popular{
+    .popular__title{
+        margin-bottom: 48px;
+        @include styleText($fs-42,$fw-900,$color-black);
+    }
+}
+@media screen and (max-width:992.98px) {
+    .bannerProducts{
+        @include margin-top(90px);
+    }
+    .newArrivals{
+        @include padding(112px 0);
+    }
+}

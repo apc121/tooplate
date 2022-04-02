@@ -1,0 +1,32 @@
+.banner{
+    background-color: $color-f0f8ff;
+    margin-top: 80px;
+    padding: 7rem 0;
+    .banner__title {
+        max-width: 500px;
+        
+        @include styleText($fs-64, $fw-900, $color-black);
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    @media screen and (max-width:1119.8px) {
+        @include margin-top(80px);
+        .banner__title{
+            @include font-size($fs-64);
+        }
+    }
+    @media screen and (max-width:992.98px) {
+        @include margin-top(80px);
+        .banner__title{
+            @include font-size($fs-64);
+        }
+    }
+    @media screen and (max-width:575.98px) {
+        .banner__title{
+            max-width: 300px;
+        }
+    }
+}

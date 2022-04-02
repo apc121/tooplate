@@ -1,0 +1,96 @@
+.bannerContact{
+    .banner__title{
+        left: 13%;
+        position: relative;
+    }
+}
+.formContact{
+    .formContact__title{
+        @include styleText($fs-42,$fw-700,$color-black);
+        span{
+            color: $color-primary;
+        }
+    }
+    .form-floating{
+        .form-control{
+            border-color: $color-d0d1d1;
+         
+          
+        }
+        label{
+            @include styleText($fs-16,$fw-300,$color-d0d1d1);
+
+        }
+    }
+    .btn-submit{
+        padding: $pd-32 0;
+        width: 50%;
+        border:1px solid $color-black;
+        @include styleButton($color-white,$color-black,$fs-16,$fw-700,100px,0,$pd-10 + 6);
+        transition: .5s;
+        &:hover{
+            background-color: $color-primary;
+            border-color:$color-primary;
+            outline: none;
+        }
+    }
+    .contact__info{
+        .contact__item{
+            padding: $pd-42;
+            text-align: center;
+            h6{
+                @include styleText($fs-20,$fw-700,$color-black);
+                margin-bottom: 16px;
+            }
+           p{
+               @include styleText($fs-20,$fw-normal,$color-6c757d);
+           }
+           .social{
+               i{
+                   padding-right: $pd-10;
+                   transition: .5s;
+                   &:hover{
+                       color: $color-primary;
+                       cursor: pointer;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (max-width:1119.8px) {
+    .bannerContact{
+        .banner__title{
+            @include padding(100px 0)
+        }
+    }
+}
+@media screen and(max-width:767.98px) {
+    .formContact{
+        .contact__info{
+            .contact__info--borderL{
+                border-left: 0 !important;
+            }
+            .contact__info--borderR{
+                border-right: 0 !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:575.98px) {
+    .bannerContact{
+        .banner__title{
+            @include padding(150px 0)
+
+        }
+     
+    }
+    .formContact{
+        .contact__info{
+            padding-left: 12px;
+            .contact__info--border0{
+                border-left: 0;
+            }
+        }
+    }
+}

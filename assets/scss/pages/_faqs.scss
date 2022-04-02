@@ -1,0 +1,34 @@
+.bannerFaqs{
+    .banner__title{
+        max-width: 800px;
+    }
+}
+.generalInfo{
+    .generalInfo__title{
+        @include styleText($fs-42,$fw-700,$color-black);
+        margin-bottom: 8px;
+    }
+   
+}
+.about{
+    .about__title{
+        @include styleText($fs-42,$fw-700,$color-black);
+        span{
+            color: $color-primary;
+        }
+    }
+    padding-bottom: 80px;
+}
+@media screen and (max-width:992.98px) {
+    .generalInfo{
+        @include padding(112px 0);
+        .generalInfo__title{
+            @include font-size($fs-42);
+        }
+    }
+    .about{
+        .about__title{
+            @include font-size($fs-42);
+        }
+    }
+}

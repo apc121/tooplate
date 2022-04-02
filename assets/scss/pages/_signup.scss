@@ -1,0 +1,63 @@
+.signup{
+    max-width: 600px;
+    margin: auto;
+    .btn-google,.btn-facebook{
+       font-size: $fs-20;
+       width: 80%;
+       background-color: transparent;
+       margin: auto;
+       text-align: center;
+       border:1px solid $color-d0d1d1;
+       transition: .5s;
+       &:hover{
+           background-color: $color-primary;
+           i{
+               color: $color-white;
+           }
+       }
+    }
+    h1{
+        @include styleText($fs-64,$fw-900,$color-black);
+
+    }
+    .line{
+        hr{
+            width: 100%;
+        }
+    }
+    .form-signup{
+        .form-control{
+        }
+        label{
+            @include styleText($fs-16,$fw-300,$color-d0d1d1);
+        }
+        .btn-signin{
+            border: 1px solid $color-black;
+            @include styleButton($color-white,$color-black,$fs-18,$fw-700,100px,0,0);
+            transition: .5s;
+            &:hover{
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+        .link-signup{
+            @include styleText($fs-20,$fw-300,$color-717275);
+            a{
+                text-decoration: none;
+                color: $color-717275;
+                transition: .5s;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width:576px) {
+        .btn-facebook,.btn-google{
+            @include font-size(20px);
+            width: 100%;
+        }
+    }
+}

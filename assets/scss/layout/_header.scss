@@ -1,0 +1,103 @@
+header {
+    padding: $pd-25 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 6px $color-d0d1d1;
+    z-index: 50;
+    .navbar-brand {
+        text-transform: capitalize;
+        @include styleText($fs-24, $fw-700, $color-primary);
+
+        span {
+            color: $color-black;
+            transition: .5s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .header__nav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    @include styleText($fs-16, $fw-normal, $color-717275);
+                    margin: 0 $m-24;
+                    display: block;
+                    padding: 0;
+
+                    &.active {
+                        color: $color-primary;
+
+                        // position: relative;
+                        &::after {
+                            content: '';
+                            // position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            display: block;
+                            background-color: $color-d0d1d1;
+                        }
+                    }
+
+                    &:hover {
+                        color: $color-primary;
+
+                        &::after {
+                            content: '';
+                            // position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            display: block;
+                            background-color: $color-d0d1d1;
+                            animation: fadeInUp;
+                            animation-duration: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header__icon {
+        i {
+            color: $color-black;
+            opacity: .8;
+            transition: .2s;
+
+            &:hover {
+                color: $color-primary;
+                opacity: 1;
+            }
+        }
+
+        .header__iconLogin {}
+    }
+
+    @media screen and (max-width:991.8px) {
+        .navbar-toggler{
+            padding: 0;
+            font-size: $fs-32;
+            &:focus{
+                box-shadow: none;
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+            }
+            
+        }
+        .header__nav {
+            margin-top: 20px;
+            .nav-item {
+                padding-bottom: 15px;
+            }
+           .nav-link{
+               margin: 0 !important;
+           }
+        }
+        
+    }
+}

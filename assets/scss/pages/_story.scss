@@ -1,0 +1,216 @@
+.bannerStory {
+   
+  .banner__title{
+      left: 13%;
+      position: relative;
+  }
+}
+
+.team {
+    background-color: $color-d0d1d1;
+
+    .team__title {
+        @include styleText($fs-42, $fw-900, $color-black);
+
+        span {
+            color: $color-primary;
+        }
+
+        margin-bottom: 48px;
+    }
+
+    .team__list {
+        .team__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-white;
+            padding: $pd-42 $pd-32;
+            border-radius: 5px;
+
+            img {
+                width: 85px;
+                height: 85px;
+                border-radius: 50%;
+            }
+
+            .info {
+                margin-right: auto;
+                padding-left: 20px;
+
+                .member-name {
+                    @include styleText($fs-24, $fw-700, $color-black);
+                }
+
+                .position {
+                    @include styleText($fs-12 + 2, $fw-700, $color-6c757d);
+                }
+            }
+
+            .more-info {
+                width: 42px;
+                height: 42px;
+                background-color: $color-d0d1d1;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 42px;
+                cursor: pointer;
+
+                i {
+                    color: $color-white;
+                    transition: .5s;
+                }
+
+                &:hover i {
+                    color: $color-black;
+                }
+            }
+
+            .modal {
+                .modal-dialog {
+                    max-width: 900px;
+
+                    .modal-content {
+                        .modal-header {
+                            .btn-close {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        .modal-body {
+                            padding: 64px 64px 0;
+
+                            .modal-info {
+                                text-align: center;
+                                border-bottom: 1px solid $color-d0d1d1;
+                                padding-bottom: 4rem;
+
+                                h3 {
+                                    @include styleText($fs-36, $fw-700, $color-black);
+                                }
+
+                                .position {
+                                    @include styleText($fs-20, $fw-700, $color-6c757d);
+                                }
+                            }
+                        }
+
+                        .modal-overview {
+                            padding-top: 64px;
+
+                            h3 {
+                                @include styleText($fs-24, $fw-700, $color-black);
+                                margin-bottom: 24px;
+                            }
+
+                            .modal-desc {
+                                p {
+                                    @include styleText($fs-20, $fw-300, $color-717275);
+                                }
+                            }
+                        }
+
+                        .modal-footer {
+                            padding-left: 64px;
+                            margin-right: auto;
+                            padding-bottom: 64px;
+
+                            span,
+                            a {
+                                @include styleText($fs-16, $fw-700, $color-black);
+                                padding-right: 10px;
+                            }
+
+                            a {
+                                transition: .4s;
+
+                                i {
+                                    font-size: $fs-20;
+                                }
+
+                                &:hover {
+                                    color: $color-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feaback {
+    .feaback__title {
+        max-width: 400px;
+        margin: auto;
+        @include styleText($fs-42, $fw-900, $color-black);
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    .feaback__carousel {
+        max-width: 900px;
+        margin: auto;
+
+        .swiper-slide {
+            i {
+                font-size: $fs-42;
+                color: $color-primary;
+            }
+
+            .content {
+
+                padding: $pd-42;
+                padding-bottom: 0;
+                @include styleText($fs-24, $fw-100, $color-717275);
+            }
+
+            .feaback__info {
+                padding: 0 $pd-42;
+                margin-bottom: 100px;
+
+                img {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 15px;
+                height: 15px;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $color-primary;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media screen and(max-width:992.98px) {
+    .bannerStory{
+        .banner__title{
+            @include padding(112px 0);
+        }
+    }
+    .team{
+        @include padding(112px 0);
+    }
+    .feaback{
+        @include padding(112px 0);
+        .feaback__carousel{
+            .feaback__info{
+                display: flex;
+            }
+        }
+    }
+}

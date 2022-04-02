@@ -1,0 +1,295 @@
+.tooplateCarousel {
+    .homeCarousel {
+        height: 100vh;
+
+        .swiper-slide {
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: .2);
+            }
+        }
+
+        .carousel-caption {
+            max-width: 700px;
+            z-index: 10;
+            top: 60%;
+            left: 6%;
+            margin: 0;
+            transform: translateY(-50%);
+            text-align: left;
+
+            h1 {
+                text-transform: capitalize;
+                @include styleText($fs-64, $fw-700, $color-white);
+            }
+
+            p {
+                margin: 16px 0 48px;
+                @include styleText($fs-24, $fw-300, $color-white);
+            }
+
+            .button-link {
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: .5s;
+                @include styleButton($color-white, $color-black, $fs-16, $fw-700, 50px, $pd-32, $pd-20);
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            right: 8%;
+            z-index: 10;
+
+            .swiper-pagination-bullet {
+                width: 30px;
+                height: 30px;
+                border: 5px solid rgba(255, 255, 255, .35);
+                background-color: transparent;
+
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.little {
+    .title {
+        @extend %title;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    .little__content {
+        .nav {
+            .nav-link {
+                background-color: transparent;
+                border-left: 1px solid $color-d0d1d1;
+                border-radius: 0;
+                @include styleText($fs-18, $fw-700, $color-d0d1d1);
+
+                &.active {
+                    color: $color-primary;
+                    border-left: 1px solid $color-primary;
+                }
+
+                &:hover {
+                    color: $color-primary;
+                    border-left: 1px solid $color-primary;
+
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                img {
+                    width: 100%;
+                }
+
+                .tab-itemRight {
+                    padding-left: 30px;
+
+                    h4 {
+                        @include styleText($fs-32, $fw-700, $color-black);
+                        margin-bottom: 20px;
+                        max-width: 310px;
+
+                        span {
+                            color: $color-primary;
+                            line-height: 1.5;
+                        }
+
+                    }
+
+                    p {
+                        @include styleText($fs-20, $fw-300, $color-717275);
+
+                        .signin {
+                            text-decoration: none;
+                            @include styleText($fs-20, $fw-300, $color-717275);
+                            text-transform: lowercase;
+                            &:hover{
+                                color: $color-primary;
+                            }
+                        }
+                    }
+
+                    .statistika {
+                        .statistika__item {
+                            p {
+
+                                @include styleText($fs-16, $fw-700, $color-black);
+                                padding-bottom: 5px;
+
+                                &:first-child {
+                                    border-bottom: 1px solid $color-d0d1d1;
+                                }
+
+                                &.w-90 {
+                                    width: 90%;
+                                }
+
+                                &.w-80 {
+                                    width: 80%;
+                                }
+
+                                &.w-70 {
+                                    width: 70%;
+                                }
+                            }
+
+                            .procento {
+                                font-size: $fs-24;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.retail {
+    background-color: $color-f0f8ff;
+
+    .retail__right {
+        padding-left: 50px;
+
+        .retail__title {
+            @include styleText($fs-42, $fw-700, $color-black);
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        p {
+            @include styleText($fs-24, $fw-100, $color-717275);
+        }
+    }
+}
+
+.featured {
+    .title {
+        @extend %title;
+    }
+
+    .featured__products {}
+
+    .viewAll {
+        a {
+            border-bottom: 2px solid $color-d0d1d1;
+        }
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    .tooplateCarousel {
+        .homeCarousel {
+            .carousel-caption {
+                // top: 55%;
+                max-width: 500px;
+
+                h1 {
+                    // font-size:11vw;
+                    @include font-size(64px);
+                }
+
+                p {
+                    @include font-size(24px);
+                }
+
+                .button-link {
+                    @include padding(20px 32px);
+                }
+            }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .little {
+        &.section {
+            @include padding(112px 0);
+        }
+
+        .little__content {
+            .nav {
+                @include margin-bottom(40px);
+
+                .nav-link {
+                    text-align: start;
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    .tab-itemRight {
+                        padding-left: 12px;
+                        @include padding-top(20px);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .retail {
+        .retail__right {
+            @include padding-bottom(48px);
+
+            .retail__title {
+                @include padding-top(40px);
+            }
+        }
+    }
+
+    .featured {
+        @include padding(112px 0);
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .tooplateCarousel {
+        .homeCarousel {
+            .carousel-caption {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .tooplateCarousel {
+        .homeCarousel {
+            .carousel-caption {
+                max-width: 300px;
+            }
+        }
+    }
+}
